@@ -1,0 +1,21 @@
+#####################################################################################
+##################       Installing terraform on Centos-7    ########################
+
+
+## Update the Centos OS Repo 
+
+## Use the below command to update the Centos
+
+ sudo yum update -y 
+
+## Download the Zip file from the terraform repo 
+
+ wget https://releases.hashicorp.com/terraform/0.12.4/terraform_0.12.4_linux_amd64.zip
+
+## Unzip the downloaded Zipfile to the folder /usr/local/bin/
+
+ sudo unzip ./terraform_0.12.4_linux_amd64.zip -d /usr/local/bin/
+
+## Check with the terraform version
+
+ terraform -v
