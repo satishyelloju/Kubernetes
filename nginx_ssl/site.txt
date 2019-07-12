@@ -1,0 +1,1 @@
+https://scmquest.com/nginx-docker-container-with-https-protocol/
