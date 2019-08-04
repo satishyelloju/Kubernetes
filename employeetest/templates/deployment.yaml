@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: employeetest
+  template:
+    metadata:
+      labels:
+        app: employeetest
+    spec:
+      containers:
+      - name: employee
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      imagePullSecrets:
+      - name: registry-secret  
+        ports:
+        - containerPort: 8080

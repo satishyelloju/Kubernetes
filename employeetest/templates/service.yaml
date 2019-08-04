@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: employee-service
+  labels:
+    name: employeetest
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: employeetest
+  ports:
+  - port: {{ .Values.service.port }}
+    

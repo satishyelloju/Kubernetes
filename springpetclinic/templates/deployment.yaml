@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springpetclinic-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: springpetclinic
+  template:
+    metadata:
+      labels:
+        app: springpetclinic
+    spec:
+      containers:
+      - name: springpetclinic
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      imagePullSecrets:
+      - name: registry-secret  
+        ports:
+        - containerPort: 8080

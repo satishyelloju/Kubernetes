@@ -1,0 +1,1000 @@
+    6  ls
+    7  em -rf kubens.sh kubectx.sh 
+    8  rm -rf kubens.sh kubectx.sh 
+    9  cd helm/
+   10  ls
+   11  cd completion/
+   12  ls
+   13  mv kubectx.sh kubectx.zs
+   14  mv kubectx.zs kubectx.zsh
+   15  mv kubens.sh kubens.zsh
+   16  ls
+   17  ls -al
+   18  chmod -R 644 kubectx.zsh kubens.zsh 
+   19  ls -al 
+   20  wget https://k8s.io/examples/admin/resource/quota-mem-cpu-pod.yaml
+   21  ls
+   22  mv quota-mem-cpu-pod.yaml ../../
+   23  cd ../..
+   24  ls
+   25  cat quota-mem-cpu-pod.yaml 
+   26  clear
+   27  helm 
+   28  ls
+   29  cd helm/
+   30  ls
+   31  cd kubernetes-series/
+   32  ls
+   33  cd helm/
+   34  ls
+   35  cd scripts/
+   36  ls
+   37  sh startup.sh
+   38  clear
+   39  cd
+   40  clear
+   41  kubectl get nodes
+   42  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+   43  clear
+   44  ls
+   45  cd kubernetes-prometheus/
+   46  cd ../helm/
+   47  ls
+   48  cd kubernetes-series/
+   49  ls
+   50  cd helm/
+   51  ls
+   52  cd scripts/
+   53  ls
+   54  sh startup.sh 
+   55  ls
+   56  sh add_helm.sh 
+   57  gcloud container clusters get-credentials helm-cluster --zone us-central1-a --project first-bit-242611
+   58  kubectl get ndoes
+   59  gcloud container clusters get-credentials helm-cluster --zone us-central1-a --project first-bit-242611
+   60  kubectl get nodes
+   61  kubectl get pods
+   62  gcloud container clusters get-credentials my-kubernets-cluster --zone us-central1-a --project first-bit-242611
+   63  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+   64  kubectl get nodes
+   65  clear
+   66  ls
+   67  clear
+   68  ls -al 
+   69  c..
+   70  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+   71  ls
+   72  clear
+   73  helm 
+   74  clear
+   75  helm search postgresql
+   76  helm
+   77  celar
+   78  clear
+   79  helm search postgresql
+   80  helm install stable/postgresql
+   81  helm init
+   82  helm install stable/postgresql
+   83  helm version
+   84  helm ls
+   85  ls
+   86  clear
+   87  ls
+   88  cd helm/
+   89  ls
+   90  cd kubernetes-series/
+   91  ls
+   92  cd helm/scripts/sh startup.sh
+   93  cd helm/scripts/
+   94  sh startup.sh 
+   95  cd
+   96  kubectl get nodes
+   97  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+   98  kubectl get nodes
+   99  kubectl get pods -n kube-system -o wide
+  100  cler
+  101  clear
+  102  ls
+  103  ls -al 
+  104  hel hhelm
+  105  kubectl get nodes
+  106  clear
+  107  helm search postgresql
+  108  helm install stable/postgresql
+  109  helm search mongodb
+  110  helm install stable/mongodb
+  111  helm reset --force
+  112  helm search mongodb
+  113  helm install 
+  114  kubectl get pods -n kube-system -o wide
+  115  clear
+  116  cd helm/kubernetes-series/helm/scripts/
+  117  sh add_helm.sh 
+  118  cd
+  119  helm init
+  120  helm search mongodb
+  121  helm install stable/mongodb
+  122  ls
+  123  kubectl get deployments
+  124  kubectl expose deployments/nginx-1 --port 80 --type=LoadBalancer
+  125  kubectl get deployments
+  126  helm search wordpress
+  127  helm 
+  128  helm get stale/wordpress
+  129  helm get stable/wordpress
+  130  helm get -h 
+  131  clear
+  132  helm get stable/wordpress
+  133  helm search nginx
+  134  helm get stable/nginx-ingress
+  135  helm 
+  136  clear
+  137  helm fetch stable/wordpress
+  138  ls
+  139  cd wordpress/
+  140  ls
+  141  clear
+  142  cd..
+  143  cd ..
+  144  ls
+  145  tar -zvxf wordpress-5.12.3.tgz 
+  146  ls
+  147  cd wordpress/
+  148  ls
+  149  mm
+  150  clear
+  151  mkdir ../wordpressown
+  152  ls
+  153  mv mysql-wordpress.yaml wordpress.yaml ../wordpressown/
+  154  ls
+  155  cd charts/
+  156  ls
+  157  cd mariadb/
+  158  ls
+  159  clear
+  160  ls
+  161  cd ..
+  162  ls
+  163  cat values.yaml 
+  164  cd
+  165  clear
+  166  ls
+  167  cd nginx/
+  168  ls
+  169  cd charts/
+  170  ls
+  171  cd ..
+  172  ls
+  173  vi Chart.yaml 
+  174  vi values.yaml 
+  175  cd templates/
+  176  ls
+  177  vi deployment.yaml 
+  178  cat deployment.yaml 
+  179  cd cd ..
+  180  cd ..
+  181  ls
+  182  cat values.yaml 
+  183  ls
+  184  cd templates/
+  185  ls
+  186  cd tests/
+  187  LS
+  188  ls
+  189  vi test-connection.yaml 
+  190  ls
+  191  cd ..
+  192  ls
+  193  cat NOTES.txt 
+  194  cat _helpers.tpl 
+  195  clear
+  196  ls
+  197  cdl
+  198  cd
+  199  ls
+  200  hem install nginx
+  201  helm install nginx
+  202  kubectl get pods
+  203  cd nginx
+  204  ls
+  205  cd templates/
+  206  ls
+  207  vi service.yaml 
+  208  ls
+  209  cat _helpers.tpl 
+  210  cat NOTES.txt 
+  211  ls
+  212  cat deployment.yaml 
+  213  cat service.yaml 
+  214  cat No
+  215  ls
+  216  cat No
+  217  cat NOTES.txt 
+  218  cd
+  219  curl https://127.0.0.1:8080
+  220  curl http://127.0.0.1:8080
+  221  ls
+  222  cd nginx/
+  223  ls
+  224  cat values.yaml 
+  225  ls
+  226  vi values.yaml 
+  227  ls
+  228  clear
+  229  cd
+  230  kubectl get deployments
+  231  kubectl delete deployments/plundering-pike-nginx 
+  232  kubectl get service 
+  233  kubectl delete service/plundering-pike-nginx 
+  234  kubectl get service 
+  235  clear
+  236  ls
+  237  helm install nginx
+  238  kubectl get pods
+  239  kubectl get deployments
+  240  kubectl get service
+  241  clear
+  242  kubectl get service
+  243  kubectl
+  244  clear
+  245  helm
+  246  helm list
+  247  helm delete plundering-pike
+  248  helm list
+  249  kubectl get pods
+  250  kubectl describe pod/happy-wallaby-mongodb-74b6455b49-jbjt6
+  251  helm search postgresql
+  252  helm fetch stable/postgresql
+  253  ls
+  254  tar -zxvf postgresql-5.3.8.tgz 
+  255  ls
+  256  helm install postgresql
+  257  kubectl get pods
+  258  clear
+  259  kubectl get pods
+  260  kubectl describe pods/peddling-puffin-postgresql-0
+  261  ls
+  262  history 
+  263  clear
+  264  docker
+  265  clea
+  266  r
+  267  clear
+  268  ls
+  269  clear
+  270  kubectl get pods
+  271  ls
+  272  cd postgresql/
+  273  ls
+  274  cat values
+  275  cat values.yaml 
+  276  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  277  clear
+  278  kubectl get pods
+  279  kubectl get nodes
+  280  clear
+  281  ls
+  282  cd helm/
+  283  ;s
+  284  ls
+  285  cd kubernetes-series/
+  286  ls
+  287  cd helm/
+  288  ls
+  289  cd scripts/
+  290  ls
+  291  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  292  sh startup.sh 
+  293  clear
+  294  kubectl get nodes
+  295  ls
+  296  helm
+  297  cd helm/
+  298  ls
+  299  cd kubernetes-series/helm/scripts/
+  300  ls
+  301  sh add_helm.sh 
+  302  helm 
+  303  clear
+  304  cd
+  305  clear
+  306  ls
+  307  helm 
+  308  celar
+  309  clear
+  310  helm create Nginxsatya
+  311  ls
+  312  cd Nginxsatya/
+  313  ls
+  314  cd templates/
+  315  ;s
+  316  ls
+  317  clear
+  318  ls
+  319  cat deployment.yaml 
+  320  clear
+  321  ls
+  322  cd ..
+  323  ls
+  324  cat Chart.yaml 
+  325  clear
+  326  cat values.yaml 
+  327  helm create mychart
+  328  ls
+  329  cd mychart/
+  330  ls
+  331  cat values.yaml 
+  332  clear
+  333  helm delete mychart
+  334  ls
+  335  cd ..
+  336  cler
+  337  ls
+  338  helm delete mychart/
+  339  ls
+  340  helm delete mychart
+  341  ls
+  342  rm -rf mychart/
+  343  ls
+  344  clear
+  345  ls
+  346  cd ..
+  347  cler
+  348  clear
+  349  ls
+  350  helm 
+  351  helm delete Nginxsatya
+  352  ls
+  353  rm -rf Nginxsatya/
+  354  clear
+  355  ls
+  356  rm -rf postgresql
+  357  ls
+  358  rm -rf tomcat
+  359  ls
+  360  clear
+  361  rm -rf clear
+  362  clear
+  363  ls
+  364  rm -rf redis1.yaml 
+  365  rm -rf redis.yaml 
+  366  ls
+  367  mkdir yaml
+  368  ls
+  369  mv *.yaml yaml/
+  370  ls
+  371  cd wordpress
+  372  l;s
+  373  ls
+  374  clear
+  375  ls
+  376  cd ..
+  377  ls
+  378  rm -rf wordpress
+  379  rm -rf wordpressown/
+  380  ls
+  381  clear
+  382  mkdir monitoring
+  383  ls
+  384  mv kubernetes-prometheus/ monitoring/
+  385  ls
+  386  mv *.tgz yaml/
+  387  ls
+  388  clear
+  389  ls -al 
+  390  clear
+  391  ls
+  392  mkdir Helm_Installation 
+  393  mv helm/ Helm_Installation/
+  394  ls
+  395  clear
+  396  ls
+  397  mkdir My_Helm_Charts
+  398  ls
+  399  mv nginx/ My_Helm_Charts/
+  400  ls
+  401  clear
+  402  ls
+  403  cd My_Helm_Charts/
+  404  ls
+  405  clear
+  406  cd nginx/
+  407  ls
+  408  vi values.yaml 
+  409  v Chart.yaml 
+  410  vi Chart.yaml 
+  411  ls
+  412  cd charts/
+  413  ls
+  414  cd ..
+  415  cd templates/
+  416  ls
+  417  vi deployment.yaml 
+  418  cat _helpers.tpl 
+  419  wq
+  420  ls
+  421  vi NOTES.txt 
+  422  cd ..
+  423  ls
+  424  vi values.yaml 
+  425  clear
+  426  ls
+  427  cd templates/
+  428  ls
+  429  cd tests/
+  430  ls
+  431  cd ..
+  432  ls
+  433  cat NOTES.txt 
+  434  clear
+  435  cd
+  436  ls
+  437  helm create custom_nginx
+  438  ls
+  439  cd custom_nginx/
+  440  ls
+  441  vi values.yaml 
+  442  cd charts/
+  443  ls
+  444  cd ..
+  445  ls
+  446  cd templates/
+  447  ls
+  448  vi deployment.yaml 
+  449  cd ..
+  450  ls
+  451  vi values.yaml 
+  452  cd templates/
+  453  ls
+  454  vi deployment.yaml 
+  455  vi service.yaml 
+  456  cd ..
+  457  helm install          
+  458  helm install custom_nginx/
+  459  helm install custom_nginx
+  460  cd custom_nginx/
+  461  ls
+  462  cd templates/tests/
+  463  ls
+  464  vi test-connection.yaml 
+  465  ls
+  466  cd ..
+  467  helm install custom_nginx
+  468  cd custom_nginx/
+  469  cd templates/tests/
+  470  vi test-connection.yaml 
+  471  cat test-connection.yaml 
+  472  cd ..
+  473  ls
+  474  cd ..
+  475  vi values.yaml 
+  476  cd ..
+  477  helm install custom_nginx/
+  478  vi values.yaml 
+  479  ls
+  480  cd custom_nginx/
+  481  ls
+  482  vi values.yaml 
+  483  cd ..
+  484  clear
+  485  ls
+  486  helm install custom_nginx/
+  487  cd custom_nginx/
+  488  vi values.yaml 
+  489  cat values.yaml 
+  490  cd ..
+  491  clear
+  492  helm install custom_nginx/
+  493  cd custom_nginx/
+  494  cat values.yaml `
+  495  cat values.yaml 
+  496  vi values.yaml 
+  497  helm install custom_nginx
+  498  cd ..
+  499  helm repo update
+  500  helm install custom_nginx
+  501  cd custom_nginx/
+  502  vi values.yaml 
+  503  helm install custom_nginx
+  504  cd ..
+  505  helm update repo 
+  506  helm install custom_nginx/
+  507  clear
+  508  mv custom_nginx mynginx
+  509  ls
+  510  helm update repo 
+  511  clear
+  512  helm install mynginx
+  513  ls
+  514  cd mynginx/
+  515  ls
+  516  cd templates/
+  517  ls
+  518  vi deployment.yaml 
+  519  vi service.yaml 
+  520  vi ingress.yaml
+  521  cd
+  522  ls
+  523  clear
+  524  helm install mynginx
+  525  ls
+  526  cd mynginx
+  527  ls
+  528  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  529  clear
+  530  ls
+  531  cd mynginx/
+  532  ks
+  533  ls
+  534  cd templates/
+  535  ls
+  536  vi deployment.yaml 
+  537  cat service.yaml 
+  538  cd ..
+  539  helm install mynginx/
+  540  rm -rf mynginx/
+  541  ls
+  542  clear
+  543  helm update repo
+  544  helm update repo 
+  545  celar
+  546  clear
+  547  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  548  kubectl get nodes
+  549  kubectl get pods
+  550  kubectl get deployments
+  551  kubectl get service
+  552  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  553  kubectl get nodes
+  554  clear
+  555  kubectl get pods
+  556  kubectl get services
+  557  clear
+  558  ls
+  559  helm update repo 
+  560  helm 
+  561  ls
+  562  cd Helm_Installation/
+  563  ls
+  564  cd helm/
+  565  ls
+  566  cd kubernetes-series/
+  567  ls
+  568  cd helm/
+  569  ls
+  570  cd scripts/
+  571  ls
+  572  sh startup.sh 
+  573  sh add_helm.sh 
+  574  clear
+  575  ls
+  576  cd
+  577  helm 
+  578  clear
+  579  helm 
+  580  clear
+  581  ls
+  582  helm create nginx
+  583  ls
+  584  cd nginx/
+  585  ls
+  586  vi values.yaml 
+  587  ls
+  588  vi Chart.yaml 
+  589  cd templates/
+  590  ls
+  591  vi deployment.yaml 
+  592  vi ingress.yaml 
+  593  cd ..
+  594  cd templates/
+  595  ls
+  596  cat service.yaml 
+  597  clear
+  598  cd ..
+  599  vi values.yaml 
+  600  clear
+  601  cd ..
+  602  clear
+  603  helm update repo 
+  604  clear
+  605  hel repo 
+  606  helm repo 
+  607  helm repo add nginx
+  608  clear
+  609  cd nginx/
+  610  ls
+  611  vi values.yaml 
+  612  cd ..
+  613  helm install nginx
+  614  cd nginx/
+  615  ls
+  616  cat values.yaml 
+  617  cd templates/
+  618  ls
+  619  cat ingress.yaml 
+  620  clear
+  621  cd ..
+  622  kubectl get podss
+  623  kubectl get pods
+  624  kubectl describe pod/flippant-lionfish-nginx-5858cfd966-27lds
+  625  clear
+  626  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  627  kubectl get nodes
+  628  clear
+  629  kubectl get pods
+  630  kubectl get nodes
+  631  gcloud container clusters get-credentials helm-cluster --zone us-central1-a --project first-bit-242611
+  632  ls
+  633  clear
+  634  kubectl get nodes
+  635  kubectl get pods
+  636  kubectl describe pod/flippant-lionfish-nginx-5858cfd966-27lds
+  637  ls
+  638  clear
+  639  ls
+  640  cd tem 
+  641  cd templates/
+  642  ls 
+  643  cat deployment.yaml 
+  644  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  645  helm 
+  646  clear
+  647  ls
+  648  kubectl get pods
+  649  kubectl get deployments
+  650  gcloud container clusters get-credentials helm-cluster --zone us-central1-a --project first-bit-242611
+  651  kubectl get deployments
+  652  kubectl get servic e
+  653  kubectl get service
+  654  ls
+  655  pwd
+  656  mkdir test
+  657  cd test/
+  658  ls
+  659  vi sample.html
+  660  cat sample.html 
+  661  cd ..
+  662  ls
+  663  cd nginx/
+  664  ls
+  665  cd templates/
+  666  ls
+  667  cd de
+  668  cd deplo
+  669  vi deployment.yaml 
+  670  cd
+  671  clear
+  672  helm create mycustomnginx
+  673  cd mycustomnginx/
+  674  ls
+  675  cat values.yaml 
+  676  vi values.yaml 
+  677  cd templates/
+  678  ls
+  679  vi deployment.yaml 
+  680  cd
+  681  ls
+  682  cd test/
+  683  ls
+  684  pwd
+  685  cd ../mycustomnginx/
+  686  ls
+  687  cd templates/
+  688  vi deployment.yaml 
+  689  cd
+  690  helm install mycustomnginx/
+  691  kubectl get pods
+  692  kubectl get deployments
+  693  kubetl get pods
+  694  kubectl get pods
+  695  clear
+  696  kubectl get service
+  697  kubectl delete service/halting-pug-mycustomnginx
+  698  clear
+  699  kubectl get deployments
+  700  kubectl delete deployments/halting-pug-mycustomnginx
+  701  clear
+  702  ls
+  703  rm -rf mycustomnginx/
+  704  clear
+  705  cd
+  706  clear
+  707  ls
+  708  helm create myownnginx
+  709  ls
+  710  cd myownnginx/
+  711  ls
+  712  cat values.yaml 
+  713  vi values.yaml 
+  714  cd templates/
+  715  ls
+  716  cat _helpers.tpl 
+  717  ls
+  718  cat NOTES.txt 
+  719  ls
+  720  cat deployment.yaml 
+  721  ls
+  722  cat NOTES.txt 
+  723  cat _helpers.tpl 
+  724  cat service.yaml 
+  725  clear
+  726  cd
+  727  helm install myownnginx/
+  728  kubectl get pods
+  729  cp myownnginx/ mynginxcustom
+  730  cp -r myownnginx/ mynginxcustom
+  731  ls
+  732  cd mynginxcustom/
+  733  ls
+  734  tree
+  735  clear
+  736  exit
+  737  exit
+  738  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  739  clear
+  740  ls
+  741  clear
+  742  kubectl get nodes
+  743  clear
+  744  ls
+  745  cd Helm_Installation/helm/kubernetes-series/helm/scripts/
+  746  ls
+  747  sh startup.sh 
+  748  sh add_helm.sh 
+  749  cd
+  750  clear
+  751  kubectl get pods
+  752  kubectl get nodes
+  753  clear
+  754  touch persistvolume.yaml 
+  755  df -
+  756  hdf -h
+  757  df -h
+  758  ls
+  759  pwd
+  760  mkdir pvstorage
+  761  helm install myownnginx/
+  762  clear
+  763  ls
+  764  kubectl get pods
+  765  kubectl get service
+  766  kubectl get deployments
+  767  kubectl get service
+  768  clear
+  769  kubectl get pods
+  770  kubectl describe pod/trendsetting-gnat-myownnginx-6ccd9cc9f5-s9wq
+  771  kubectl describe pod/trendsetting-gnat-myownnginx-6ccd9cc9f5-s9wql
+  772  clear
+  773  ls
+  774  vi persistvolume.yaml 
+  775  kubectl create -f persistvolume.yaml 
+  776  vi persistvolume.yaml 
+  777  kubectl create -f persistvolume.yaml 
+  778  vi persistvolume.yaml 
+  779  kubectl create -f persistvolume.yaml 
+  780  vi persistvolume.yaml 
+  781  kubectl create -f persistvolume.yaml 
+  782  vi persistvolume.yaml 
+  783  kubectl create -f persistvolume.yaml 
+  784  vi persistvolume.yaml 
+  785  kubectl create -f persistvolume.yaml 
+  786  vi pv.yaml
+  787  kubectl create -f pv.yaml 
+  788  kubectl get pv
+  789  kubectl describe pv/pv0003
+  790  ipaddr
+  791  ifconfig
+  792  vi pvc.yaml
+  793  vi pvc.yaml 
+  794  cd /tmp/
+  795  ls
+  796  vi index.htm
+  797  vi index.html
+  798  cd
+  799  vi pvc.yaml 
+  800  kubectl create -f pvc.yaml 
+  801  vi pvc.yaml 
+  802  kubectl create -f pvc.yaml 
+  803  vi pvc.yaml 
+  804  kubectl create -f pvc.yaml 
+  805  kubectl get pvc
+  806  kubectl get pv
+  807  kubectl get pvc
+  808  vi pvc.yaml 
+  809  kubectl create -f pvc.yaml 
+  810  kubectl get pvc
+  811  kubectl delete pvc/claim1
+  812  clear
+  813  kubectl create -f pvc.yaml 
+  814  kubectl get pvc
+  815  kubectl get pv
+  816  kubectl get pvc
+  817  vi pv.yaml 
+  818  ls
+  819  rm -rf persistvolume.yaml 
+  820  clear
+  821  ls
+  822  kubectl get ps
+  823  kubectl get pv
+  824  kubectl get pvc
+  825  kubectl delete pvc/claim1
+  826  kubectl get pv
+  827  kubectl delete pv/pv0003
+  828  clear
+  829  kubectl get pods
+  830  kubectl get deployments
+  831  kubectl get service
+  832  kubectl get ing
+  833  clear
+  834  ls
+  835  cd /mnt/
+  836  ls
+  837  mkdir data
+  838  sudo -r mkdir data
+  839  sudo mkdir data
+  840  ls
+  841  ls -al 
+  842  chmod -R 777 data/
+  843  ls -al 
+  844  clear
+  845  cd
+  846  cd /tmp/
+  847  ls
+  848  mkdir nginx-data
+  849  mv index.html nginx-data/
+  850  ld
+  851  ls
+  852  clear
+  853  cd n
+  854  cd nginx-data/
+  855  pwd
+  856  cd
+  857  vi pv.yaml 
+  858  vi pvc.yaml 
+  859  kubectl create -f pv.yaml 
+  860  vi pvc.yaml 
+  861  cat pv.yaml 
+  862  cat pvc.yaml 
+  863  kubectl create -f pvc.yaml 
+  864  kubectl get pv
+  865  kubectl get pvc
+  866  clear
+  867  ls
+  868  cd myownnginx/
+  869  ls
+  870  cd templates/
+  871  ls
+  872  cat deployment.yaml 
+  873  cd
+  874  vi pod.yaml
+  875  cat pv.yaml
+  876  cat pvc.yaml
+  877  cat pod.yaml 
+  878  vi pod.yaml 
+  879  kubectl create -f pod.yaml 
+  880  kubectl get pod
+  881  kubectl expose pod/mypod --type=LoadBalancer
+  882  vi pod.yaml 
+  883  cp pod.yaml pod1.yaml
+  884  vi pod1.yaml 
+  885  kubectl create -f pod1.yaml 
+  886  vi pod1.yaml 
+  887  kubectl create -f pod1.yaml 
+  888  kubectl get pods
+  889  kubectl expose pod/mypod1 --type=LoadBalancer
+  890  kubectl get service 
+  891  clear
+  892  kubectl get pods
+  893  kubectl describe pod/mypod1
+  894  clear
+  895  ls
+  896  kubectl get service 
+  897  kubectl delete service mypod mupod1 trendsetting-gnat-myownnginx
+  898  kubectl get deployments
+  899  kubectl delete deployments trendsetting-gnat-myownnginx
+  900  kuebctl get pods 
+  901  kubectl get pods
+  902  kubectl delete pods mypod mypod1
+  903  clear
+  904  ls
+  905  kubectl get pods
+  906  clear
+  907  kubectl get nodes
+  908  exit
+  909  gcloud container clusters get-credentials my-kubernetes-cluster --zone us-central1-a --project first-bit-242611
+  910  kubectl get nodes
+  911  helm
+  912  clear
+  913  kubectl get pods
+  914  kubectl get deployments
+  915  ls
+  916  kubectl get nodes
+  917  helm install myownnginx/
+  918  clear
+  919  gcloud container clusters get-credentials helm-cluster --zone us-central1-a --project first-bit-242611
+  920  ls
+  921  helm install myownnginx/
+  922  clear
+  923  kubectl get pods
+  924  ls
+  925  cd /tmp
+  926  ls
+  927  cd ngi
+  928  cd ..
+  929  cd 
+  930  cd nginx/
+  931  LS
+  932  ls
+  933  cd
+  934  clear
+  935  ls
+  936  cd pvss
+  937  cd pvstorage/
+  938  ls
+  939  cd
+  940  rm -rf pvstorage/
+  941  cd test/
+  942  ls
+  943  kubectl get pods
+  944  kubectl describe pod/ringed-chimp-myownnginx-866cf7b6f4-5lbgm
+  945  ls
+  946  kubectl get deployments
+  947  kubectl get pods
+  948  kubectl get pod/ringed-chimp-myownnginx-866cf7b6f4-5lbgm
+  949  kubectl describe pod/ringed-chimp-myownnginx-866cf7b6f4-5lbgm
+  950  kubectl cp /test/sample.html default/ringed-chimp-myownnginx-866cf7b6f4-5lbgm:/usr/share/nginx/
+  951  kubectl cp ./test/sample.html default/ringed-chimp-myownnginx-866cf7b6f4-5lbgm:/usr/share/nginx/
+  952  ls
+  953  helm install mynginxcustom
+  954  cd /tes
+  955  cd test/
+  956  ls
+  957  mv sample.html index.html
+  958  cd
+  959  kubectl cp ./test/index.html default/ringed-chimp-myownnginx-866cf7b6f4-5lbgm:/usr/share/nginx/html/
+  960  vi cd /te
+  961  cd /test/
+  962  ls
+  963  cd test/
+  964  ls
+  965  vi index.html 
+  966  kubectl cp ./test/index.html default/ringed-chimp-myownnginx-866cf7b6f4-5lbgm:/usr/share/nginx/html/
+  967  cd
+  968  kubectl cp ./test/index.html default/ringed-chimp-myownnginx-866cf7b6f4-5lbgm:/usr/share/nginx/html/
+  969  clear
+  970  ls
+  971  cd My_Helm_Charts/
+  972  ls
+  973  cd
+  974  ls
+  975  mv mynginxcustom/ My_Helm_Charts/
+  976  ls
+  977  mv nginx/ nginx1
+  978  mv nginx1/ My_Helm_Charts/
+  979  ls
+  980  mv *.yaml yaml/
+  981  cd yaml/
+  982  ;
+  983  ls
+  984  cd
+  985  helm package myownnginx
+  986  ls
+  987  rm -rf myownnginx-0.1.0.tgz 
+  988  clear
+  989  ls
+  990  helm 
+  991  helm inspect myownnginx
+  992  ls
+  993  cd Helm_Installation/
+  994  ls
+  995  cd helm/
+  996  ls
+  997  kubernetes-series/
+  998  ls
+  999  clear
+ 1000  cd
+ 1001  clear
+ 1002  ls
+ 1003  kubectl get service 
+ 1004  kubectl get pods
+ 1005  history >> history.txt

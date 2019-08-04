@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testspring-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: testspring
+  template:
+    metadata:
+      labels:
+        app: testspring
+    spec:
+      containers:
+      - name: testspringboot
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      imagePullSecrets:
+      - name: registry-secret  
+        ports:
+        - containerPort: 8080
